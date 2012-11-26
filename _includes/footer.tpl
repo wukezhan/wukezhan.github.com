@@ -21,7 +21,7 @@
 			</a>
 		</div>
 	</div>
-	<span style="color:#bbb;font-size:12px">make the world a little better and easier</span>
+	<span style="color:#bbb;font-size:12px">many a little makes a mickle.</span>
 	<p style="clear:both"></p>
 </div>
 <!--[/footer]-->
