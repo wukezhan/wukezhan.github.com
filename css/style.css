@@ -75,7 +75,7 @@ h1 a:hover {
 	color:#111;
 	font-size:14px;
 	line-height:190%;
-	margin:0 auto 50px;
+	margin:0 auto 20px;
 	padding:20px;
 	/*text-shadow:0 1px 0 #FFFFFF;*/
 	width:700px;
@@ -127,7 +127,7 @@ h1 a:hover {
 }
 #footer {
 	width:740px;
-    margin:20px auto;
+    margin:20px auto 50px;
 }
 #footer #feed {
 	float:right;
