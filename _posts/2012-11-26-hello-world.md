@@ -1,8 +1,8 @@
 ---
 layout: post
 title: hello world!
-category: whatever
-tags: []
+category: [ whatever ]
+tags: [ test ]
 ---
 
 ###hello world
