@@ -66,7 +66,7 @@ a:hover, a:hover span#eighty, a:hover span#beans {
 h1 a:hover {
 	color:#ddd;
 }
-div#wrapper {
+#wrapper {
 	-moz-border-radius:5px 5px 5px 5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
@@ -96,7 +96,7 @@ div#wrapper {
 	-webkit-border-radius:5px;
 }
 
-div#content img, div#content object {
+#content img, #content object {
 	-moz-border-radius:5px 5px 5px 5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
@@ -105,33 +105,34 @@ div#content img, div#content object {
 	/*border:5px solid #222222;*/
 	/*width:680px;*/
 }
-div#content li {
+#content li {
 	list-style:disc inside none;
 	margin-left:10px;
 }
 
-div#content .cnt li {
+#content .cnt li {
 	margin:5px 5px 5px 15px;
 }
-div#header {
+#header {
 	font-size:13px;
 	margin:0 0 45px;
 }
-div#header ul {
+#header ul {
 	float:right;
 	margin:0;
 }
-div#header li {
+#header li {
 	float:left;
 	margin:0 0 0 20px;
 }
-div#footer {
-	margin:50px 0 0;
+#footer {
+	width:740px;
+    margin:20px auto;
 }
-div#footer #feed {
+#footer #feed {
 	float:right;
 }
-div#content ul.posts li {
+#content ul.posts li {
 	margin:7px 0 0;
 	font-size:14px;
 	list-style:none;
@@ -215,7 +216,7 @@ li ul {
 	margin:10px 0 10px 20px;
 }
 
-div#content li ul li {
+#content li ul li {
 	list-style:circle inside none;
 }
 .index h2 {
@@ -284,10 +285,10 @@ blockquote {
 	font-style:italic;
 	margin: 30px;
 }
-div#disqus_thread {
+#disqus_thread {
 	margin:50px 0 0;
 }
-div.dsq-options, div.dsq-sharing-options, div.dsq-dc-logo, div#dsq-global-toolbar, div#dsq-pagination {
+div.dsq-options, div.dsq-sharing-options, div.dsq-dc-logo, #dsq-global-toolbar, #dsq-pagination {
 	display:none !important;
 }
 p.article_date {
@@ -432,10 +433,10 @@ span.balloon {
 	padding:0 4px 0 0;
 }
 
-div#disqus_thread li{
+#disqus_thread li{
 	list-style:none;
 }
 
-div#disqus_thread li ul li {
+#disqus_thread li ul li {
 	list-style:none;
 }
