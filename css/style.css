@@ -37,7 +37,7 @@ html {
 body {
 	-moz-background-size:100% auto;
 	background-attachment:fixed;
-	background: #666 url(/images/bg.png);
+	background: #666 url(/image/bg.png);
 	background-position:center center;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -385,7 +385,7 @@ span.balloon {
 	background:#ddd;
 }
 
-#tags {
+#saying {
 	float: right;
 	margin: 15px 0;
 	color: #999;
