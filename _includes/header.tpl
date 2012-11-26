@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }}_{% endif %}{{ site.name }}</title>
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/wukezhan">
