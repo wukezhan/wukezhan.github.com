@@ -3,3 +3,4 @@ pygments: true
 name: 指间世界
 paginate: 5
 theme: default
+permalink: /:year-:month-:day/:title/

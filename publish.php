@@ -94,7 +94,6 @@ class Git
 $git = new Git();
 $git->status();
 $git->prepare();
-//var_dump($git);
 $git->commit('.', '...');
 $git->push();
 
