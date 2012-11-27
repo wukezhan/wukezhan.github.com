@@ -11,7 +11,7 @@ title: tags
             <h1>tags</h1>
             <div class="tags">
             {% for tag in site.tags %} 
-            <a id="{{ tag[0] }}">{{ tag[0] | join: "/" }}</a>
+            <a id="{{ tag[0] }}" href="/tag/{{ tag[0] }}/">{{ tag[0] | join: "/" }}</a>
             {% endfor %}
             </div>
         </div>
