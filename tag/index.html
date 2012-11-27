@@ -1,0 +1,21 @@
+---
+title: tags
+---
+{% include header.tpl %}
+
+<div id="wrapper">
+    <div id="content" class="index">
+        {% include sidebar.tpl %}
+        
+        <div id="main">
+            <h1>tags</h1>
+            <div class="tags">
+            {% for tag in site.tags %} 
+            <a id="{{ tag[0] }}">{{ tag[0] | join: "/" }}</a>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include footer.tpl %}
