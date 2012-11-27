@@ -26,6 +26,6 @@
 </div>
 <!--[/footer]-->
 <script type="text/javascript" src="/js/footer.js"></script>
-{% include default/stats.tpl %}
+{% include stats.tpl %}
 </body>
 </html>

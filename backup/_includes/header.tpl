@@ -11,5 +11,5 @@
 
 <body>
 
-{% include default/top.tpl %}
+{% include top.tpl %}
 
