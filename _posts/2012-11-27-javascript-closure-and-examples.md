@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 闭包的一个通俗解释及简单示例  
-category: [ code ]
+categories: [ code ]
 tags: [ javascript, closure ]
 ---
 

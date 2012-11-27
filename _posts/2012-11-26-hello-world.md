@@ -9,7 +9,7 @@ tags: [ test ]
 {% highlight php linenos %}
 
     <?php 
-    echo "hello world!";
+    echo "hello china!";
 
 {% endhighlight %}
 

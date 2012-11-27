@@ -1,7 +1,7 @@
 ---
 layout: post
-title: binary search in c
-category: [ code ]
+title: 经典算法之二分查找
+categories: [ code ]
 tags: [ c, search ]
 ---
 
