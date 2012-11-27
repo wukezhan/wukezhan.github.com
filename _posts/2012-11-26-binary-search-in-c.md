@@ -1,6 +1,6 @@
 ---
 layout: post
-title: binary search in c
+title: binary search in c 
 category: [ code ]
 tags: [ c, search ]
 ---

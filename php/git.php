@@ -9,6 +9,12 @@ class Git
         'deleted' => array(),
         'new file' => array()
     );
+    public function cd($dir)
+    {
+        echo " > cd ",$dir,"\n";
+        chdir($dir);
+        return $this;
+    }
     public function execute($cmd)
     {
         echo " > ",$cmd,"\n";
@@ -44,6 +50,7 @@ class Git
                 }
             }
         }
+        return $this;
     }
     public function prepare()
     {
@@ -59,6 +66,7 @@ class Git
         $rms = array_unique($rms);
         $this->add($adds);
         $this->rm($rms);
+        return $this;
     }
     public function add($files)
     {
@@ -66,6 +74,7 @@ class Git
             $cmd = "git add '".implode("' '", $files)."'";
             $this->execute($cmd);
         }
+        return $this;
     }
     public function rm($files)
     {
@@ -73,7 +82,7 @@ class Git
             $cmd = "git rm -r '".implode("' '", $files)."'";
             $this->execute($cmd);
         }
-        
+        return $this;
     }
     public function commit($files, $msg)
     {
@@ -82,17 +91,16 @@ class Git
         }
         $cmd = "git commit -m'{$msg}' {$files}";
         $this->execute($cmd);
+        return $this;
     }
     public function push($to='origin', $from='master')
     {
         $cmd = "git push {$to} {$from}";
         $this->execute($cmd);
+        return $this;
+    }
+    public function getChanges()
+    {
+        return $this->_changes;
     }
 }
-
-$git = new Git();
-$git->status();
-$git->prepare();
-$git->commit('.', '...');
-$git->push();
-
