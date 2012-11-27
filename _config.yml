@@ -1,7 +1,5 @@
 markdown: rdiscount
 pygments: true
 name: 指间世界
-permalink: /:year-:month-:day/:title/
-paginate: 5
 
-
+theme: default

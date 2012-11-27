@@ -1,8 +1,8 @@
 ---
 layout: post
-title: hello world!
-category: [ whatever ]
-tags: [ test ]
+title: 天朝，你好
+category: whatever
+tags: []
 ---
 
 ###hello world
