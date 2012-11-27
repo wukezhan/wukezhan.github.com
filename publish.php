@@ -1,12 +1,5 @@
 <?php
 
-function cmd($cmd){
-    ob_start();
-    system($cmd, $ret);
-    $ret = ob_get_contents();
-    ob_end_clean();
-    return $ret;
-}
 class Git
 {
     protected $_results = array();
@@ -20,6 +13,7 @@ class Git
     {
         
         ob_start();
+        echo " > ",$cmd,"\n";
         system($cmd, $ret);
         $ret = ob_get_contents();
         ob_end_clean();
@@ -77,7 +71,7 @@ class Git
     {
         if ($files){
             echo $cmd = "git rm -r '".implode("' '", $files)."'";
-            //$this->execute($cmd);
+            $this->execute($cmd);
         }
         
     }
@@ -87,6 +81,11 @@ class Git
             $files = "'".implode("' '", $files)."'";
         }
         $cmd = "git commit -m'{$msg}' {$files}";
+        $this->execute($cmd);
+    }
+    public function push($to='origin', $from='master')
+    {
+        $cmd = "git push {$to} {$from}";
         $this->execute($cmd);
     }
 }
