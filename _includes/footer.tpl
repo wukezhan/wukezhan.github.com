@@ -25,7 +25,7 @@
 	<p style="clear:both"></p>
 </div>
 <!--[/footer]-->
-<script type="text/javascript" src="/js/footer.js"></script>
+<script type="text/javascript" src="/theme/{{site.theme}}/static/js/footer.js"></script>
 {% include stats.tpl %}
 </body>
 </html>

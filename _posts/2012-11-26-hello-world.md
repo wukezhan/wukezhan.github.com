@@ -2,7 +2,7 @@
 layout: post
 title: 天朝，你好
 category: whatever
-tags: []
+tags: [test]
 ---
 
 ###hello world
