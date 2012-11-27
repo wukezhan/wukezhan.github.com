@@ -6,7 +6,6 @@ tags: [ c, search ]
 ---
 
 
-
 ### binary search in c
 
 {% highlight c linenos %}
@@ -48,3 +47,4 @@ tags: [ c, search ]
     }
 
 {% endhighlight %}
+
