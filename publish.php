@@ -64,14 +64,14 @@ class Git
     public function add($files)
     {
         if ($files){
-            echo $cmd = "git add '".implode("' '", $files)."'";
+            $cmd = "git add '".implode("' '", $files)."'";
             $this->execute($cmd);
         }
     }
     public function rm($files)
     {
         if ($files){
-            echo $cmd = "git rm -r '".implode("' '", $files)."'";
+            $cmd = "git rm -r '".implode("' '", $files)."'";
             $this->execute($cmd);
         }
         

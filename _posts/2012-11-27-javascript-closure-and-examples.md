@@ -19,7 +19,7 @@ javascript的闭包是其强大语言特性的重要组成部分，但是其究�
 
 一个简单例程，目的很简单，就是输出每个元素对应的序号a：
 
-{% highlight php linenos %}
+{% highlight javascript linenos %}
 
     $(function(){
       var a=1;
@@ -72,7 +72,7 @@ javascript的闭包是其强大语言特性的重要组成部分，但是其究�
 
 ### demo
 
-<a class="jsbin-embed" href="http://jsbin.com/ipawoy/47/embed?live">JS Closure</a><script src="http://static.jsbin.com/js/embed.js">
+<a class="jsbin-embed" href="http://jsbin.com/ipawoy/47/embed?live">JS Closure</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 ### 扩展资料
 
