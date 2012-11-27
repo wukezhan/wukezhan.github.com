@@ -11,32 +11,32 @@ title: 自述
 
 {% highlight c %}
 
-                                            .-....-..
-                                          .--... ..-.-.
-                                          --./../.+oy--.
-                                    -++:---/:+.o:+-./o-.
-                                 .:ydy/.....-../:+.:s+:           ......-.....
-                               ./yh+-..........-shmily-/+o++//:::--/mmmmshmily
-                             .yms:..................-::--.........-omNNNm.
-                            -mm..o:-...../.................-:/+oydmmys:
-                           +Nd:-::..../.....--://+osyhyssyhhs+:-.
-                        :yhMMy-/-...-:-+++hhhistoryyy+-....
-                       oMh+/:--.--:o/::::/:+poem/-.
-                       dN:-:-:so++o--:/coding.:-..
-                      ****http://www.wukezhan.com/::::-
-                     :Mmy+yNNNNdo-:::-..--/.....::..oN+
-                     sMmy+ymMm/-//-.......-........-.d/
-                    .NNhNdyyNho-.--.-:oo+/::::+--:-.-yh
-                    .n..q:8o437lo2;;;;;;;;;zzz:-...-sd-
-      .-:-.....--. .http://wukezhan.github.com----:omo
-   ...mm...e\mail:i(at)wukezhan.com+-;;;;:ddo::o:/hd.
-  ...NNmNd.h/-:::++/o+yymNNNmds-         ydyoo+:/kio
-  -++myhmd.s--://+oosshdNNmds.          -dy+--///dy.
-  o Nm+ymNmsyhhhddmNmmmmddo.            :do-..../d+
-  :+ php,javascript,c/c++/              -hmMmhdmddo.
-  -.@coding............              ...dmNNmmd.
-  :+NNmdm+                          ..wahahahahaha..
-  ...-/:.....                      .+NNNNNNmdhhhhdmd-
-                                    -- "thank you" --
+                                                .-....-..
+                                              .--... ..-.-.
+                                              --./../.+oy--.
+                                        -++:---/:+.o:+-./o-.
+                                     .:ydy/.....-../:+.:s+:           ......-.....
+                                   ./yh+-..........-shmily-/+o++//:::--/mmmmshmily
+                                 .yms:..................-::--.........-omNNNm.
+                                -mm..o:-...../.................-:/+oydmmys:
+                               +Nd:-::..../.....--://+osyhyssyhhs+:-.
+                            :yhMMy-/-...-:-+++hhhistoryyy+-....
+                           oMh+/:--.--:o/::::/:+poem/-.
+                           dN:-:-:so++o--:/coding.:-..
+                          ****http://www.wukezhan.com/::::-
+                         :Mmy+yNNNNdo-:::-..--/.....::..oN+
+                         sMmy+ymMm/-//-.......-........-.d/
+                        .NNhNdyyNho-.--.-:oo+/::::+--:-.-yh
+                        .n..q:8o437lo2;;;;;;;;;zzz:-...-sd-
+          .-:-.....--. .http://wukezhan.github.com----:omo
+       ...mm...e.mail:i(at)wukezhan.com+-;;;;:ddo::o:/hd.
+      ...NNmNd.h/-:::++/o+yymNNNmds-         ydyoo+:/kio
+      -++myhmd.s--://+oosshdNNmds.          -dy+--///dy.
+      o Nm+ymNmsyhhhddmNmmmmddo.            :do-..../d+
+      :+ php,javascript,c/c++/              -hmMmhdmddo.
+      -..coding............              ...dmNNmmd.
+      :+NNmdm+                          ..wahahahahaha..
+      ...-/:.....                      .+NNNNNNmdhhhhdmd-
+                                        -- "thank you" --
 
 {% endhighlight %}
