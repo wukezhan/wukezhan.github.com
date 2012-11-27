@@ -17,6 +17,7 @@ class Git
         system($cmd, $ret);
         $ret = ob_get_contents();
         ob_end_clean();
+        echo $ret;
         $this->_results = explode("\n", $ret);
         return $this->_results;
     }
