@@ -256,7 +256,11 @@ pre {
 	-moz-border-radius:5px 5px 5px 5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
-	-moz-box-shadow:0 -1px 0 #444444;
+	/*-moz-box-shadow:0 -1px 0 #444444;*/
+    -webkit-box-shadow: 0 0 3px #555;
+    -moz-box-shadow: 0 0 3px #555;
+    -o-box-shadow: 0 0 3px #555;
+    box-shadow: 0 0 3px #555;
 	background-color:#222222;
 	color:#FFFFFF;
 	font-size:13px;
