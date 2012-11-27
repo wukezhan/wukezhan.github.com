@@ -96,4 +96,5 @@ $git->status();
 $git->prepare();
 //var_dump($git);
 $git->commit('.', '...');
+$git->push();
 
