@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <title>{% if page.title %}{{ page.title }}_{% endif %}{{ site.name }}</title>
-<link rel="stylesheet" type="text/css" href="/_statics/{{site.theme}}/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/_statics/{{site.theme}}/css/syntax.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
 <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/wukezhan">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 </head>
