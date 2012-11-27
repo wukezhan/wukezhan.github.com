@@ -24,6 +24,6 @@
 		{% else %}
 		<li class="disabled"><a>»</a></li>
 		{% endif %}
-		<li><a href="javascript:void(0);">(共{{ paginator.total_posts }}篇)</a></li>
+		<li class="disabled"><a>(共{{ paginator.total_posts }}篇)</a></li>
 	</ul>
 </div>
