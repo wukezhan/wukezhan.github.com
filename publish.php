@@ -11,9 +11,8 @@ class Git
     );
     public function execute($cmd)
     {
-        
-        ob_start();
         echo " > ",$cmd,"\n";
+        ob_start();
         system($cmd, $ret);
         $ret = ob_get_contents();
         ob_end_clean();
