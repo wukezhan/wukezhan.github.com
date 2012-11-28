@@ -1,8 +1,8 @@
 markdown: rdiscount
 pygments: true
 name: 指间世界
-paginate: 5
+paginate: 10
 theme: default
 permalink: /:year-:month-:day/:title/
 
-saying: 林子里分出两条路，而我选择了人迹罕至的一条 -- 我的人生从此改变。
+saying: 中原王气久消磨，四面军声逼楚歌。仗剑纵横驱虏骑，不教荆棘没铜驼！
