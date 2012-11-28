@@ -32,7 +32,7 @@ title: 自述
                                sMmy+ymMm/-//-.......-........-.d/
                               .NNhNdyyNho-.--.-:oo+/::::+--:-.-yh
                               .n..q[8o437lo2];;;;;;;;zzz:-...-sd-
-                .-:-.....--. .http://wukezhan.github.com----:omo
+                .-:-.....--. .http://github.com/wukezhan----:omo
              ...mm...e.mail:i(at)wukezhan.com+-;;;;:ddo::o:/hd.
             ...NNmNd.h/-:::++/o+yymNNNmds-         ydyoo+:/kio
             -++myhmd.s--://+oosshdNNmds.          -dy+--///dy.
