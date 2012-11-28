@@ -21,7 +21,7 @@
 			</a>
 		</div>
 	</div>
-	<span style="color:#bbb;font-size:12px">Copyright © www.wukezhan.com. All Rights Reserved.</span>
+	<span style="color:#bbb;font-size:12px">copyright © www.wukezhan.com.</span>
 	<p style="clear:both"></p>
 </div>
 <!--[/footer]-->

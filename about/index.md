@@ -5,17 +5,17 @@ title: 自述
 
 ##某，一介书生，出生于湖北，混迹乎帝都。
 
-##自幼好文史，稍长悉神机。初从师习开天辟地系统之道，复自授经天纬地互联网之学。余自染指IT，几有十年；出道江湖，业已二载。迄今一无所有，常于心有戚戚焉！
+##自幼好文史，稍长悉神机。初从师习开天辟地系统之道，复自授经天纬地互联网之学。余自染指IT，凡有十载；出道江湖，业已二年。迄今一无所有，一无所成，常于心有戚戚焉！
 
 ##亦心崇远志，每因天下兴叹；奈身无长技，聊以鬻码为生。然大丈夫处世，当奋然向前，威武不屈，富贵不淫，贫贱不移，岂一时所能羁绊乎！
 
-##古人云：“娱我乐我，自有代码；知彼罪彼，其惟春秋。” 古之人不余欺也！![](http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/0b/tootha_thumb.gif)
+##古人云：“娱我乐我，犹有代码；知彼罪彼，其惟春秋。” 古之人不余欺也！![](http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/0b/tootha_thumb.gif)
 
 ##有好书读，有奇码编，能捉虫以增添乐趣，可编码而快慰平生，岂不快哉！
 
 {% highlight c %}
 
-                                                      .-....-..
+                                                      .-~:#:~-.
                                                     .--... ..-.-.
                                                     --./../.+oy--.
                                               -++:---/:+.o:+-./o-.
@@ -27,7 +27,7 @@ title: 自述
                                   :yhMMy-/-...-:-+++hhhistoryyy+-....
                                  oMh+/:--.--:o/::::/:+poem/-.
                                  dN:-:-:so++o--:/coding.:-..
-                                ****http://www.wukezhan.com/::::-
+                                ***http://www.wukezhan.com/:::.
                                :Mmy+yNNNNdo-:::-..--/.....::..oN+
                                sMmy+ymMm/-//-.......-........-.d/
                               .NNhNdyyNho-.--.-:oo+/::::+--:-.-yh
@@ -37,10 +37,10 @@ title: 自述
             ...NNmNd.h/-:::++/o+yymNNNmds-         ydyoo+:/kio
             -++myhmd.s--://+oosshdNNmds.          -dy+--///dy.
             o Nm+ymNmsyhhhddmNmmmmddo.            :do-..../d+
-            :+ php,javascript,c/c++/              -hmMmhdmddo.
+            :+ php,javascript,c/c++/              hmMmhdmddo
             -..coding............              ...dmNNmmd.
             :+NNmdm+                          ..wahahahahaha..
-            ...-/:.....                      .+NNNNNNmdhhhhdmd-
+            ...-/:....                       .+NNNNNNmdhhhhdmd-
                                               -- "thank you" --
 
 {% endhighlight %}
