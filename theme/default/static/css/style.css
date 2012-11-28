@@ -525,11 +525,10 @@ span.balloon {
     padding: 0px 10px;
     background: #ddd;
     color: green;
-    line-height: 1.5;
-    margin-left: 1em;
-    border-radius: 7px;
+    line-height: 1.5em;
+    border-radius: 10px;
 }
-.tags a.tag:hover {
+.categories a.category:hover {
     background: green;
     color: white;
 }
@@ -542,7 +541,7 @@ span.balloon {
     padding: 0px 10px;
     background: #ddd;
     color: green;
-    line-height: 1.6;
+    line-height: 1.5em;
     margin-left: 1em;
     border-radius: 0 3px 3px 0;
 }
@@ -553,10 +552,10 @@ span.balloon {
 .tags a.tag:before {
     position: absolute;
     content: " ";
-    border: transparent 0.8em solid;
+    border: transparent 0.75em solid;
     border-right-color: #ddd;
     top: 0;
-    left: -1.6em;
+    left: -1.5em;
     height: 0em;
     width: 0em;
 }
