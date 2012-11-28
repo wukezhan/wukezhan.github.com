@@ -527,7 +527,7 @@ span.balloon {
     background: #ddd;
     color: green;
     line-height: 1.5em;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 .categories a.category:hover {
     background: green;
