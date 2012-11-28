@@ -516,8 +516,9 @@ span.balloon {
 
 
 /****category****/
-.categories, .tags{
+.categories a, .tags a{
 	font-size: 16px;
+	margin: 5px 0 5px 0;
 }
 .categories a.category {
     display: inline-block;
