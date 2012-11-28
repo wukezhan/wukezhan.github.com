@@ -1,6 +1,7 @@
 name: 指间世界
 theme: default
 paginate: 10
+paginate_path: /page/:num/
 permalink: /:year-:month-:day/:title/
 
 author: 湛之
@@ -13,3 +14,7 @@ gaid: UA-16656304-1
 disqusid: wukezhan
 saying: 中原王气久消磨，四面军声逼楚歌。仗剑纵横驱虏骑，不教荆棘没铜驼！
 
+feeds: 
+	twitter: https://twitter.com/wukezhan
+	github: https://github.com/wukezhan
+	rss: http://feeds.feedburner.com/wukezhan

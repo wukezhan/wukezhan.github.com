@@ -13,14 +13,14 @@
 		{% endif %}
 		{% for count in (2..paginator.total_pages) %}
 		{% if count == paginator.page %}
-		<li class="active"><a href="/page{{count}}">{{count}}</a></li>
+		<li class="active"><a href="/page/{{count}}/">{{count}}</a></li>
 		{% else %}
-		<li><a href="/page{{count}}">{{count}}</a></li>
+		<li><a href="/page/{{count}}/">{{count}}</a></li>
 		{% endif %}
 		{% endfor %}
 
 		{% if paginator.page<paginator.total_pages %}
-		<li><a href="/page{{paginator.next_page}}">»</a>&gt;</li>
+		<li><a href="/page/{{paginator.next_page}}/">»</a>&gt;</li>
 		{% else %}
 		<li class="disabled"><a>»</a></li>
 		{% endif %}
