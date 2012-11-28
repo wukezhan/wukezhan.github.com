@@ -513,3 +513,61 @@ span.balloon {
   -moz-border-radius-bottomright: 4px;
 }
 /****pagination****/
+
+
+/****category****/
+.categories a.category {
+    display: inline-block;
+    position: relative;
+    padding: 0px 10px;
+    background: #f0f0f0;
+    color: green;
+    line-height: 1.5;
+    margin-left: 1em;
+    border-radius: 7px;
+}
+.tags a.tag:hover {
+    background: green;
+    color: white;
+}
+/****category****/
+
+/****tag****/
+.tags a.tag {
+    display: inline-block;
+    position: relative;
+    padding: 0px 10px;
+    background: #f0f0f0;
+    color: green;
+    line-height: 1.5;
+    margin-left: 1em;
+    border-radius: 0 3px 3px 0;
+}
+.tags a.tag:hover {
+    background: green;
+    color: white;
+}
+.tags a.tag:before {
+    position: absolute;
+    content: " ";
+    border: transparent 0.75em solid;
+    border-right-color: #f0f0f0;
+    top: 0;
+    left: -1.5em;
+    height: 0em;
+    width: 0em;
+}
+.tags a.tag:hover:before {
+    border-right-color: green;
+}
+.tags a.tag:after {
+    position: absolute;
+    content: " ";
+    background: white;
+    width: 0.5em;
+    height: 0.5em;
+    top: 0.5em;
+    left: -0.125em;
+    border-radius: 0.25em;
+}
+/****tag****/

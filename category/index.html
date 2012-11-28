@@ -10,9 +10,9 @@ title: categories
         <div id="main">
             <h1>categories</h1>
             <div class="categories">
-            {% for category in site.categories %} 
-            <a id="{{ category[0] }}" href="/category/{{ category[0] }}/">{{ category[0] }}</a>
-			{% endfor %}
+                {% for category in site.categories %} 
+                <a id="{{ category[0] }}" class="category" href="/category/{{ category[0] }}/">{{ category[0] }}</a>
+    			{% endfor %}
 			</div>
         </div>
     </div>
