@@ -1,7 +1,7 @@
-<!--
+
 <script type="text/javascript">
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-1281124-20']);
+_gaq.push(['_setAccount', {{ site.gaid }}]);
 _gaq.push(['_trackPageview']);
 
 (function() {
@@ -10,4 +10,3 @@ _gaq.push(['_trackPageview']);
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
--->
