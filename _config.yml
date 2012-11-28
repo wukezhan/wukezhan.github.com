@@ -1,6 +1,6 @@
 name: 指间世界
 theme: default
-paginate: 10
+paginate: 1
 paginate_path: /page/:num/
 permalink: /:year-:month-:day/:title/
 
