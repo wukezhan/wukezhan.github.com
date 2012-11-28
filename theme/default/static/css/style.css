@@ -516,11 +516,14 @@ span.balloon {
 
 
 /****category****/
+.categories, .tags{
+	font-size: 16px;
+}
 .categories a.category {
     display: inline-block;
     position: relative;
     padding: 0px 10px;
-    background: #f0f0f0;
+    background: #ddd;
     color: green;
     line-height: 1.5;
     margin-left: 1em;
@@ -537,9 +540,9 @@ span.balloon {
     display: inline-block;
     position: relative;
     padding: 0px 10px;
-    background: #f0f0f0;
+    background: #ddd;
     color: green;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-left: 1em;
     border-radius: 0 3px 3px 0;
 }
@@ -550,10 +553,10 @@ span.balloon {
 .tags a.tag:before {
     position: absolute;
     content: " ";
-    border: transparent 0.75em solid;
-    border-right-color: #f0f0f0;
+    border: transparent 0.8em solid;
+    border-right-color: #ddd;
     top: 0;
-    left: -1.5em;
+    left: -1.6em;
     height: 0em;
     width: 0em;
 }
