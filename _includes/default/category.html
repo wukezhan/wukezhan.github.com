@@ -3,12 +3,13 @@
 <div id="wrapper">
     <div id="content" class="index">
         {% include default/sidebar.tpl %}
+        
         <div id="main">
+            <h1>category &gt; {{ page.title }}</h1>
             {{ content }}
-            {% if page.show_paginate %}
-            {% include default/pagination.tpl %}
-            {% endif %}
+            {% include default/category.tpl %}
         </div>
+        
     </div>
 </div>
 

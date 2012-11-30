@@ -19,8 +19,8 @@
 		{% endif %}
 		{% endfor %}
 
-		{% if paginator.page<paginator.total_pages %}
-		<li><a href="/page{{paginator.next_page}}/">»</a>&gt;</li>
+		{% if paginator.page < paginator.total_pages %}
+		<li><a href="/page{{paginator.next_page}}/">»</a></li>
 		{% else %}
 		<li class="disabled"><a>»</a></li>
 		{% endif %}

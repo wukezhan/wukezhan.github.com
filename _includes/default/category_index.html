@@ -1,0 +1,18 @@
+{% include default/header.tpl %}
+
+<div id="wrapper">
+    <div id="content" class="index">
+        {% include default/sidebar.tpl %}
+        
+        <div id="main">
+            <h1>categories</h1>
+            <div class="categories">
+                {% for category in site.categories %} 
+                <a id="{{ category[0] }}" class="category" href="/category/{{ category[0] }}/">{{ category[0] }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include default/footer.tpl %}

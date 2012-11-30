@@ -45,8 +45,7 @@ layout: category
 title: __CATE__
 ---
 
-{% assign category_posts = site.categories.__CATE__ %}
-{% include category.tpl %}';
+{% assign category_posts = site.categories.__CATE__ %}';
 
 
 foreach ($cates as $cate){
@@ -65,8 +64,7 @@ layout: tag
 title: __TAG__
 ---
 
-{% assign tag_posts = site.tags.__TAG__ %}
-{% include tag.tpl %}';
+{% assign tag_posts = site.tags.__TAG__ %}';
 foreach ($tags as $tag){
     $tag = trim($tag);
     $tagFileName = "tag/{$tag}";

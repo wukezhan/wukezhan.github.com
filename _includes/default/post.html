@@ -1,13 +1,11 @@
-{% include header.tpl %}
+{% include default/header.tpl %}
 
 <div id="wrapper">
     <div id="content">
         <h2>{{ page.title }}</h2>
         <div class="cnt">
             {{ content }}
-            <br />
-            --EOF--
-            <p>若无特别说明，本站文章均为原创，转载请保留链接，谢谢</p>
+            {% include default/license.tpl %}
         </div>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
@@ -21,4 +19,4 @@
     </div>
 </div>
 
-{% include footer.tpl %}
+{% include default/footer.tpl %}

@@ -1,12 +1,12 @@
 root: /
+
 name: 指间世界
 theme: default
-paginate: 2
-paginate_path: /page/:num/
-permalink: /:year-:month-:day/:title/
-
 author: 湛之
 email: i@wukezhan.com
+
+paginate: 10
+permalink: /:year-:month-:day/:title/
 
 markdown: rdiscount
 pygments: true
