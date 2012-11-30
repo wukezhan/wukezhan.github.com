@@ -506,12 +506,17 @@ span.balloon {
 
 
 /****category****/
-#content a.category, #content a.tag{
+a.category, a.tag{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+}
+#post-info a.category, #post-info a.tag{
     font-size: 10px;
     font-weight: normal;
     margin: 5px 0 5px 0;
 }
-#content a.category{
+#post-info a.category{
     margin: 5px 5px 5px 0;
 }
 .categories a.category, .tags a.tag{
