@@ -40,12 +40,10 @@ foreach ($posts as $post){
     }
 }
 
-$catetpl = '---                                                                                                                                                          
+$catetpl = '---
 layout: category
 title: __CATE__
----
-
-{% assign category_posts = site.categories.__CATE__ %}';
+---';
 
 
 foreach ($cates as $cate){
@@ -59,12 +57,10 @@ foreach ($cates as $cate){
 }
 
 
-$tagtpl = '---                                                                                                                                                          
+$tagtpl = '---
 layout: tag
 title: __TAG__
----
-
-{% assign tag_posts = site.tags.__TAG__ %}';
+---';
 foreach ($tags as $tag){
     $tag = trim($tag);
     $tagFileName = "tag/{$tag}";
