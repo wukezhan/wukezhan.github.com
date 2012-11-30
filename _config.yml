@@ -4,6 +4,7 @@ name: 指间世界
 theme: default
 author: 湛之
 email: i@wukezhan.com
+url: http://www.wukezhan.com
 
 paginate: 10
 permalink: /:year-:month-:day/:title/

@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>闭包的一个通俗解释及简单示例_指间世界</title>
+<link rel="stylesheet" type="text/css" href="/theme/default/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/theme/default/css/syntax.css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/wukezhan">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+<!--[top]-->
+<div id="logo">
+	<span id="saying">中原王气久消磨，四面军声逼楚歌。仗剑纵横驱虏骑，不教荆棘没铜驼！</span>
+	<h1><a href="/">指间世界</a></h1>
+</div>
+<!--[/top]-->
+
+
+
+
+<div id="wrapper">
+    <div id="content">
+        <h2 id="post-title">闭包的一个通俗解释及简单示例</h2>
+        <div id="post-info">
+            <span class="post-tags">
+                 
+                <a class="tag" href="/tag/javascript/">javascript</a>
+                 
+                <a class="tag" href="/tag/closure/">closure</a>
+                
+            </span>
+            <span class="post-categories">
+                 
+                <a class="category" href="/category/code/">code</a>
+                
+            </span>
+            <div class="highlight">
+                <pre style="padding:5px 20px;">   <code class="php">$author = "<span class="author"><a href="http://www.wukezhan.com" style="color:green;">湛之</a></span>"; <span class="cm">//@since: 2012-11-27</span></code></pre>
+            </div>
+        </div>
+        <div class="post">
+            <p>今日帮同事调试一个bug，遇到了一个闭包相关的问题，此问题的解决方案恰好简约生动的体现了闭包的一些特性，想起之前所看相关资料，多是从理论、数学等比较抽象的角度来阐释闭包，乃记录此例，以期能对闭包之特性形成一生动鲜明之印象。</p>
+
+<h3>闭包是什么？</h3>
+
+<p>javascript的闭包是其强大语言特性的重要组成部分，但是其究竟是什么，却似乎不是一两句话所能解释清楚的。</p>
+
+<p>通俗来讲，大致可以理解为：闭包就是一个被绑定了某些上下文环境的javascript函数。</p>
+
+<p>在javascript中，环境上行文是一个无处不在的概念，普通函数的环境上行文只有在执行时才会真正被绑定，在此之前，此函数的任何的变量都是未知；但是闭包则不尽相同，闭包自产生之时起，其作用域内的某些变量即以完全确定，除了闭包函数本身或其产生子闭包之外，再无其他操作能够改变这些变量。</p>
+
+<h3>为什么需要用到闭包？</h3>
+
+<p>一个简单例程，目的很简单，就是输出每个元素对应的序号a：</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="lineno"> 1</span>     <span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<span class="lineno"> 2</span>       <span class="kd">var</span> <span class="nx">a</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="lineno"> 3</span>       <span class="c1">//code 1</span>
+<span class="lineno"> 4</span>       <span class="k">for</span><span class="p">(;</span> <span class="nx">a</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span> <span class="nx">a</span><span class="o">++</span><span class="p">){</span>
+<span class="lineno"> 5</span>         <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#z&#39;</span><span class="o">+</span><span class="nx">a</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<span class="lineno"> 6</span>           <span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="lineno"> 7</span>         <span class="p">});</span>
+<span class="lineno"> 8</span>       <span class="p">}</span>
+<span class="lineno"> 9</span>     
+<span class="lineno">10</span>       <span class="c1">//code 2</span>
+<span class="lineno">11</span>       <span class="k">for</span><span class="p">(;</span> <span class="nx">a</span><span class="o">&lt;</span><span class="mi">7</span><span class="p">;</span> <span class="nx">a</span><span class="o">++</span><span class="p">){</span>
+<span class="lineno">12</span>         <span class="kd">var</span> <span class="nx">c2</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<span class="lineno">13</span>           <span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="p">)};</span>
+<span class="lineno">14</span>           <span class="k">return</span> <span class="nx">f</span><span class="p">;</span>
+<span class="lineno">15</span>         <span class="p">})();</span>
+<span class="lineno">16</span>         <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#z&#39;</span><span class="o">+</span><span class="nx">a</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="nx">c2</span><span class="p">);</span>
+<span class="lineno">17</span>       <span class="p">}</span>
+<span class="lineno">18</span>     
+<span class="lineno">19</span>       <span class="c1">//code 3</span>
+<span class="lineno">20</span>       <span class="k">for</span><span class="p">(;</span> <span class="nx">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span> <span class="nx">a</span><span class="o">++</span><span class="p">){</span>
+<span class="lineno">21</span>         <span class="kd">var</span> <span class="nx">c3</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<span class="lineno">22</span>           <span class="kd">var</span> <span class="nx">_a</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+<span class="lineno">23</span>           <span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span><span class="nx">alert</span><span class="p">(</span><span class="nx">_a</span><span class="p">)};</span>
+<span class="lineno">24</span>           <span class="k">return</span> <span class="nx">f</span><span class="p">;</span>
+<span class="lineno">25</span>         <span class="p">})();</span>
+<span class="lineno">26</span>         <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#z&#39;</span><span class="o">+</span><span class="nx">a</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="nx">c3</span><span class="p">);</span>
+<span class="lineno">27</span>       <span class="p">}</span>
+<span class="lineno">28</span>     <span class="p">});</span>
+<span class="lineno">29</span>     
+</code></pre>
+</div>
+
+
+<p>通过分析代码，可以得知，代码片段1和片段2都无法得到预期的结果：</p>
+
+<p>代码片段1的结果是：当点击#z1、#z2、#z3时，都会alert出10；</p>
+
+<p>代码片段2的结果是：当点击#z4、#z5、#z6时，都会alert出10；</p>
+
+<p>代码片段3的结果是：当点击#z7、#z8、#z9时，会分别alert出7、8、9；</p>
+
+<p>演示见 <a href="http://jsbin.com/ipawoy/45">在线demo</a></p>
+
+<p>原因不难解释：由于以上元素均只是绑定了click事件为对应的函数，函数在绑定时并未执行，所以alert的参数a此时是未知；直到click事件触发时，函数才真正从其运行时上下文的作用域链中逐层向外寻找变量a的值。对于代码片段1、2，其a的定义显然是在最外层匿名函数处，而此a在3个循环执行完成后，值为10，故click触发时，alert出的数字为10，而不是预期中的序号。</p>
+
+<p>代码3的click回调函数则与代码1、2有所不同，代码3的回调函数c3，其实质为绑定了运行时环境上下文的函数f，其alert参数_a在事件绑定之前即已确定，因其处于匿名函数的封闭的作用域下，故其值能确保不受更外层环境的影响，因此确保了代码的正确运行。</p>
+
+<p>代码2、3中的回调函数c2、c3，其实质都是匿名函数返回的函数f，区别仅在于前一个f函数的环境上下文未绑定alert参数，后一个绑定了，而致运行结果天差地别，何其微妙！</p>
+
+<p>可见，闭包之重要作用在于为一个函数预先制定一个封闭的上下文环境，并在此上下文环境的作用域预先定义好某些受保护的变量，以该上下文环境的封闭性确保在该函数执行之前，该上下文环境的作用域不会受到外层作用域链的干扰，这正是闭包之精髓所在！</p>
+
+<h3>demo</h3>
+
+<p><a class="jsbin-embed" href="http://jsbin.com/ipawoy/47/embed?live">JS Closure</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+
+<h3>扩展资料</h3>
+
+<p>欲了解闭包，还需了解关于作用域及作用域链的相关知识，以下是几篇相关的比较好的文章：</p>
+
+<ul>
+<li><a href="http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html">学习Javascript闭包（Closure）</a> by 阮一峰的网络日志</li>
+<li><a href="http://www.laruence.com/2009/05/28/863.html">Javascript作用域原理</a> by laruence</li>
+<li>http://www.cnblogs.com/TomXu/archive/2012/01/31/2330252.html</li>
+</ul>
+
+
+            <p><span class="split-line" style="color:red;">---EOF---</span></p>
+<p>
+	<span class="license" style="color:green;font-weight:bold;">Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, article under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</span>
+</p>
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = 'http://wukezhan.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=wukezhan">comments powered by Disqus.</a></noscript>
+    </div>
+</div>
+
+
+<!--[footer]-->
+<div id="footer">
+	<div id="feed">
+		<div class="badget" id="github">
+			<a href="http://github.com/wukezhan">
+			<span class="service">github</span>
+			<span class="info"> </span>
+			</a>
+		</div>
+		<div class="badget" id="twt">
+			<a href="http://twitter.com/wukezhan">
+			<span class="service">twitter</span>
+			<span class="info"> </span>
+			</a>
+		</div>
+		<div class="badget" id="feedburner">
+			<a href="http://feeds.feedburner.com/wukezhan">
+			<span class="service">rss</span>
+			<span class="info"> </span>
+			</a>
+		</div>
+	</div>
+	<span style="color:#bbb;font-size:12px">copyright © www.wukezhan.com.</span>
+	<p style="clear:both"></p>
+</div>
+<!--[/footer]-->
+<script type="text/javascript" src="/theme/default/js/footer.js"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-16656304-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>

@@ -8,7 +8,7 @@
             <h1>tags</h1>
             <div class="tags">
                 {% for tag in site.tags %} 
-                <a id="{{ tag[0] }}" class="tag" href="/tag/{{ tag[0] }}/">{{ tag[0] | join: "/" }}</a>
+                <a class="tag" href="/tag/{{ tag[0] }}/">{{ tag[0] | join: "/" }}</a>
                 {% endfor %}
             </div>
         </div>

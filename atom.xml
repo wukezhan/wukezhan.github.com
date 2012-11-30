@@ -4,24 +4,30 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>指间世界</title>
- <link href="http://wukezhan.github.com/atom.xml" rel="self"/>
- <link href="http://wukezhan.github.com/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://wukezhan.github.com/</id>
- <author>
-   <name>wukezhan</name>
-   <email>wukezhan@gmail.com</email>
- </author>
+<title>指间世界</title>
+<link href="http://wukezhan.github.com/atom.xml" rel="self"/>
+<link href="http://wukezhan.github.com/"/>
+<updated>{{ site.time | date_to_xmlschema }}</updated>
+<id>http://wukezhan.github.com/</id>
+<author>
+	<name>wukezhan</name>
+	<email>wukezhan@gmail.com</email>
+</author>
 
- {% for post in site.posts limit:20 %}
- <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://blog.leezhong.com{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://wukezhan.github.com{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
- {% endfor %}
- 
+{% for post in site.posts limit:20 %}
+<entry>
+	<title>{{ post.title }}</title>
+	<link href="{{ site.url }}{{ post.url }}"/>
+	<updated>{{ post.date | date_to_xmlschema }}</updated>
+	<id>{{ site.url }}{{ post.id }}</id>
+	<content type="html">
+		<div class="highlight">
+		    <pre style="padding:5px 20px;">  <code class="php">$author = <span class="author"><a href="{{ site.url }}" style="color:green;">{{ site.author }}</a></span>; //@since: {{ post.date | date:"%Y-%m-%d" }}</code></pre>
+		</div>
+        {{ post.content | xml_escape }}
+        {% include default/license.tpl %}
+	</content>
+</entry>
+{% endfor %}
+
 </feed>
