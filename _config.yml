@@ -1,5 +1,5 @@
 root: /
-safe: false
+safe: true
 
 name: 指间世界
 theme: default
