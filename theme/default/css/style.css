@@ -108,11 +108,11 @@ h1 a:hover {
 #content ul li {
 	list-style:disc inside none;
 }
-#content li{
-	margin-left:10px;
-}
 #content .post li {
 	margin:5px 5px 5px 15px;
+}
+#content .post ol li{
+	margin-left: 20px;
 }
 #header {
 	font-size:13px;
