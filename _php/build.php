@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author wukezhan
+ * 尝试为有改动的文章生成分类和标签
+ */
+
 include 'git.php';
 function simple_array_parse($str){
     $str = trim($str);
@@ -29,7 +34,8 @@ $tags = array();
 foreach ($posts as $post){
     $contents = file_get_contents($post);
     if (preg_match('/\-\-\-([\s\S]{0,})\-\-\-/', $contents, $matches)){
-        $metas = explode("\n", $matches[1]);
+        $meta = mb_convert_encoding($matches[1], 'utf8', 'iso-8859-1');
+        $metas = explode("\n", $meta);echo $meta,"\n";
         foreach ($metas as $meta){
             if (preg_match("/^(category|categories):(.*?)$/", $meta, $matches)){
                 $cates = array_merge($cates, simple_array_parse($matches[2]));
@@ -39,7 +45,7 @@ foreach ($posts as $post){
         }
     }
 }
-
+var_dump($tags);
 $catetpl = '---
 layout: category
 title: __CATE__
@@ -48,6 +54,7 @@ title: __CATE__
 
 foreach ($cates as $cate){
     $cate = trim($cate);
+    //$cateFileName = mb_convert_encoding("category/{$cate}", 'utf8', 'ascii');
     $cateFileName = "category/{$cate}";
     if (!file_exists($cateFileName)){
         mkdir($cateFileName);
@@ -63,6 +70,7 @@ title: __TAG__
 ---';
 foreach ($tags as $tag){
     $tag = trim($tag);
+    //$tagFileName = mb_convert_encoding("tag/{$tag}", 'utf8', 'ascii');
     $tagFileName = "tag/{$tag}";
     if (!file_exists($tagFileName)){
         mkdir($tagFileName);

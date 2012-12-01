@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author wukezhan
+ * 简单的git类
+ */
+mb_internal_encoding("UTF-8");
 
 class Git
 {
