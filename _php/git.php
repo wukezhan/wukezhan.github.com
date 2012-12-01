@@ -23,7 +23,7 @@ class Git
     }
     public function execute($cmd)
     {
-        $cmd = PATH_SEPARATOR == ':'?$cmd:mb_convert_encoding($cmd, 'GBK', 'UTF8');
+        $cmd = PATH_SEPARATOR == ':'?$cmd:mb_convert_encoding($cmd, 'UTF8', 'GBK');
         echo " > ",$cmd,"\n";
         ob_start();
         system($cmd, $ret);
