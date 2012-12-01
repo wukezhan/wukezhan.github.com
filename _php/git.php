@@ -77,7 +77,7 @@ class Git
     public function add($files)
     {
         if ($files){
-            $cmd = 'git add "'.implode('" "', $files).'"';
+            $cmd = 'git add '.implode(' ', $files);
             $this->execute($cmd);
         }
         return $this;
@@ -85,7 +85,7 @@ class Git
     public function rm($files)
     {
         if ($files){
-            $cmd = 'git rm -r "'.implode('" "', $files).'"';
+            $cmd = 'git rm -r '.implode(' ', $files);
             $this->execute($cmd);
         }
         return $this;
@@ -93,7 +93,7 @@ class Git
     public function commit($files, $msg)
     {
         if (is_array($files)){
-            $files = '"'.implode('" "', $files).'"';
+            $files = implode(' ', $files);
         }
         $cmd = "git commit -m'{$msg}' {$files}";
         $this->execute($cmd);
