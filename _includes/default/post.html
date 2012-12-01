@@ -4,15 +4,17 @@
     <div id="content">
         <h2 id="post-title">{{ page.title }}</h2>
         <div id="post-info">
-            <span class="post-tags">
-                {% for tag in page.tags limit:3 %} 
-                <a class="tag" href="/tag/{{ tag }}/">{{ tag }}</a>
-                {% endfor %}
-            </span>
-            <span class="post-categories">
-                {% for category in page.categories limit:3 %} 
-                <a class="category" href="/category/{{ category }}/">{{ category }}</a>
-                {% endfor %}
+            <span style="float:right;">
+                <span class="post-categories">
+	                {% for category in page.categories limit:3 %} 
+	                <a class="category" href="/category/{{ category }}/">{{ category }}</a>
+	                {% endfor %}
+	            </span>
+	            <span class="post-tags">
+                    {% for tag in page.tags limit:3 %} 
+                    <a class="tag" href="/tag/{{ tag }}/">{{ tag }}</a>
+                    {% endfor %}
+                </span>
             </span>
             <div class="highlight">
                 <pre style="padding:5px 20px;">   <code class="php">$author = "<span class="author"><a href="{{ site.url }}" style="color:green;">{{ site.author }}</a></span>"; <span class="cm">//@since: {% if page.date %}{{ page.date | date:"%Y-%m-%d" }}{% else %}2012-11-20{% endif %}</span></code></pre>

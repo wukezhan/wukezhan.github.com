@@ -205,9 +205,6 @@ h2 {
 	margin: 0px -20px 30px -20px;
     padding: 5px 20px;
 }
-.post-tags, .post-categories{
-	float:right;
-}
 #disqus_thread h3 {
 	margin:20px 0;
 	font-size:22px;
@@ -506,6 +503,9 @@ span.balloon {
 
 
 /****category****/
+.categories, .tags{
+	padding: 0 0 20px 0;
+}
 a.category, a.tag{
     font-size: 16px;
     font-weight: bold;
@@ -517,7 +517,8 @@ a.category, a.tag{
     margin: 5px 0 5px 0;
 }
 #post-info a.category{
-    margin: 5px 5px 5px 0;
+    margin-right: 5px;
+    line-height: 1.5em;
 }
 .categories a.category, .tags a.tag{
 	font-size: 16px;
