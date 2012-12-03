@@ -12,11 +12,3 @@ tags: [ test ]
     echo "hello china!";
 
 {% endhighlight %}
-
-```php
-
-    <?php 
-    //for test
-    echo "hello china!";
-    
-```
