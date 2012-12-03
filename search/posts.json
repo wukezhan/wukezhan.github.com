@@ -7,5 +7,6 @@ layout: nil
 		"date": "{{ post.date|date:'%Y-%m-%d %H:%M:%S' }}",
 		"cates": ["{{ post.categories|join:'", "' }}"],
 		"tags": ["{{ post.categories|join:'", "' }}"],
-	}{% if !forloop.last %},{% endif %}
+		"url": "{{ post.url }}"
+	}{% if forloop.last %}{% else %},{% endif %}
 {% endfor %}]
