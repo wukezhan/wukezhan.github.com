@@ -4,8 +4,8 @@ layout: nil
 [{% for post in site.posts %}
 	{
 		"title": "{{ post.title|replace:'"', '\\"' }}",
-		"date": "{{ post.date}}",
+		"date": "{{ post.date|date:'%Y-%m-%d %H:%i:%s' }}",
 		"cates": ["{{ post.categories|join:'", "' }}"],
 		"tags": ["{{ post.categories|join:'", "' }}"],
-	}{% if !forloop.last %},{% endif %}
+	}{% if forloop.last %},{% endif %}
 {% endfor %}]
