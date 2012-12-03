@@ -1,0 +1,11 @@
+---
+layout: nil
+---
+[{% for post in site.posts %}
+	{
+		"title": "{{ post.title|replace:'"', '\\"' }}",
+		"date": "{{ post.date}}",
+		"cates": ["{{ post.categories|join:'", "' }}"],
+		"tags": ["{{ post.categories|join:'", "' }}"],
+	}{% if !forloop.last %},{% endif %}
+{% endfor %}]
