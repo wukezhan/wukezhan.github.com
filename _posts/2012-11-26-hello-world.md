@@ -13,3 +13,10 @@ tags: [ test ]
 
 {% endhighlight %}
 
+```php
+
+    <?php 
+    //for test
+    echo "hello china!";
+    
+```
