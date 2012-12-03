@@ -1,9 +1,7 @@
 <?php
 /**
- * @author wukezhan
- * 尝试为有改动的文章生成分类和标签
+ * 构建
  */
-
 include 'git.php';
 function simple_array_parse($str){
     $str = trim($str);
@@ -34,9 +32,7 @@ $tags = array();
 foreach ($posts as $post){
     $contents = file_get_contents($post);
     if (preg_match('/\-\-\-([\s\S]{0,})\-\-\-/', $contents, $matches)){
-        $meta = $matches[1];
-        $meta = PATH_SEPARATOR == ':'?$meta : mb_convert_encoding($meta, 'GBK', 'UTF8');
-        $metas = explode("\n", $meta);
+        $metas = explode("\n", $matches[1]);
         foreach ($metas as $meta){
             if (preg_match("/^(category|categories):(.*?)$/", $meta, $matches)){
                 $cates = array_merge($cates, simple_array_parse($matches[2]));

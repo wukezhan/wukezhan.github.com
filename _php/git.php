@@ -1,11 +1,9 @@
 <?php
 /**
+ * Git类
  * @author wukezhan
- * 简单的git类
+ *
  */
-
-mb_internal_encoding("UTF-8");
-
 class Git
 {
     protected $_results = array();
@@ -23,7 +21,6 @@ class Git
     }
     public function execute($cmd)
     {
-        $cmd = PATH_SEPARATOR == ':'?$cmd:mb_convert_encoding($cmd, 'UTF-8', 'GBK');
         echo " > ",$cmd,"\n";
         ob_start();
         system($cmd, $ret);
@@ -35,7 +32,6 @@ class Git
     }
     public function status()
     {
-        //Changes not staged for commit:
         $this->execute('git status');
         
         $signs = array(
@@ -78,7 +74,8 @@ class Git
     public function add($files)
     {
         if ($files){
-            $cmd = 'git add '.implode(' ', $files);
+            $files = implode(" ", $files);
+            $cmd = "git add {$files}";
             $this->execute($cmd);
         }
         return $this;
@@ -86,7 +83,7 @@ class Git
     public function rm($files)
     {
         if ($files){
-            $cmd = 'git rm -r '.implode(' ', $files);
+            $cmd = "git rm -r ".implode(" ", $files)."";
             $this->execute($cmd);
         }
         return $this;
@@ -94,7 +91,7 @@ class Git
     public function commit($files, $msg)
     {
         if (is_array($files)){
-            $files = implode(' ', $files);
+            $files = "".implode(" ", $files)."";
         }
         $cmd = "git commit -m'{$msg}' {$files}";
         $this->execute($cmd);
@@ -111,3 +108,6 @@ class Git
         return $this->_changes;
     }
 }
+
+
+
