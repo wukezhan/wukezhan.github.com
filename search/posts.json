@@ -6,7 +6,7 @@ layout: nil
 		"title": "{{ post.title|replace:'"', '\\"' }}",
 		"date": "{{ post.date|date:'%Y-%m-%d %H:%M:%S' }}",
 		"cates": ["{{ post.categories|join:'", "' }}"],
-		"tags": ["{{ post.categories|join:'", "' }}"],
+		"tags": ["{{ post.tags|join:'", "' }}"],
 		"url": "{{ post.url }}"
 	}{% if forloop.last %}{% else %},{% endif %}
 {% endfor %}]
