@@ -30,6 +30,9 @@ foreach ($changes as $files){
 $cates = array();
 $tags = array();
 foreach ($posts as $post){
+    if (!file_exists($post)){
+        continue;
+    }
     $contents = file_get_contents($post);
     if (preg_match('/\-\-\-([\s\S]{0,})\-\-\-/', $contents, $matches)){
         $metas = explode("\n", $matches[1]);
