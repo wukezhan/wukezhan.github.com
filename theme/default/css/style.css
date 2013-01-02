@@ -13,7 +13,7 @@ address,caption,cite,code,dfn,em,strong,th,var {
 	font-style:normal;
 	font-weight:normal;
 }
-ul {
+ol,ul {
 	list-style:none;
 }
 caption,th {
@@ -105,14 +105,13 @@ h1 a:hover {
 	/*border:5px solid #222222;*/
 	/*width:680px;*/
 }
-#content ul li {
+#content li {
 	list-style:disc inside none;
+	margin-left:10px;
 }
+
 #content .post li {
 	margin:5px 5px 5px 15px;
-}
-#content .post ol li{
-	margin-left: 20px;
 }
 #header {
 	font-size:13px;

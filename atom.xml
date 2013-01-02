@@ -21,10 +21,11 @@ layout: nil
 	<updated>{{ post.date | date_to_xmlschema }}</updated>
 	<id>{{ site.url }}{{ post.id }}</id>
 	<content type="html">
-		<!--div class="highlight">
+		<div class="highlight">
 		    <pre style="padding:5px 20px;">  <code class="php">$author = <span class="author"><a href="{{ site.url }}" style="color:green;">{{ site.author }}</a></span>; //@since: {{ post.date | date:"%Y-%m-%d" }}</code></pre>
-		</div-->
+		</div>
         {{ post.content | xml_escape }}
+        {% include default/license.tpl %}
 	</content>
 </entry>
 {% endfor %}

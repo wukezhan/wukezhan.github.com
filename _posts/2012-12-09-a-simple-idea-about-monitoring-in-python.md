@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【想法】用python实现一个简单的摄像头监控程序
+title: 【想法】用python实现一个简单的摄像头闯入检测程序
 categories: [ 想法, python ]
 tags: [ python, 监控 ]
 ---
