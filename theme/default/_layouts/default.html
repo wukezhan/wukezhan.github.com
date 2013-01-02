@@ -1,0 +1,15 @@
+{% include default/header.tpl %}
+
+<div id="wrapper">
+    <div id="content" class="index">
+        {% include default/sidebar.tpl %}
+        <div id="main">
+            {{ content }}
+            {% if page.show_paginate %}
+            {% include default/pagination.tpl %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% include default/footer.tpl %}

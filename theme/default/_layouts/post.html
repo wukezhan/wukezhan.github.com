@@ -1,0 +1,22 @@
+{% include default/header.tpl %}
+
+<div id="wrapper">
+    <div id="content">
+        <h2>{{ page.title }}</h2>
+        <div class="cnt">
+            {{ content }}
+            {% include default/license.tpl %}
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = 'http://wukezhan.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=wukezhan">comments powered by Disqus.</a></noscript>
+    </div>
+</div>
+
+{% include default/footer.tpl %}
