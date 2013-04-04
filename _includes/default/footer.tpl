@@ -11,13 +11,11 @@
 		<div class="badget" id="twt">
 			<a href="http://twitter.com/wukezhan">
 			<span class="service">twitter</span>
-			<span class="info"> </span>
 			</a>
 		</div>
 		<div class="badget" id="feedburner">
 			<a href="http://feeds.feedburner.com/wukezhan">
 			<span class="service">rss</span>
-			<span class="info"> </span>
 			</a>
 		</div>
 	</div>

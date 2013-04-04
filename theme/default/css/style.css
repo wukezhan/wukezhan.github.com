@@ -13,9 +13,6 @@ address,caption,cite,code,dfn,em,strong,th,var {
 	font-style:normal;
 	font-weight:normal;
 }
-ol,ul {
-	list-style:none;
-}
 caption,th {
 	text-align:left;
 }
@@ -27,12 +24,6 @@ q:before,q:after {
 	content:'';
 }
 abbr,acronym { border:0;
-}
-
-
-html {
-	overflow-x:hidden;
-	overflow-y:scroll;
 }
 body {
 	-moz-background-size:100% auto;
@@ -85,13 +76,14 @@ h1 a:hover {
 	font-weight:bold;
 }
 
-#content .posts li a {
+#content ul.posts li a {
 	font-weight:normal;
 	padding:5px;
 }
 
-#content .posts li a:hover {
+#content ul.posts li a:hover {
 	background:#ddd;
+	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
@@ -105,7 +97,7 @@ h1 a:hover {
 	/*border:5px solid #222222;*/
 	/*width:680px;*/
 }
-#content li {
+#content ul.posts li {
 	list-style:disc inside none;
 	margin-left:10px;
 }
@@ -405,7 +397,7 @@ span.balloon {
 	line-height:100%;
 	border:1px solid #999;
 	background:#ddd;
-	font-size:11px;
+	font-size:12px;
 	border-radius:3px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
@@ -413,15 +405,13 @@ span.balloon {
 	float:left;
 }
 
-#feed .service {
-	margin-right:2px;
+#feed .service,#feed .info {
 	display:inline-block;
-	border-right:1px solid #999;
-	padding:4px;
+	padding:2px;
+	margin:0px;
 }
-
 #feed .info {
-	padding:0 4px 0 0;
+	border-left:1px solid #999;
 }
 
 #disqus_thread li{
@@ -509,14 +499,6 @@ span.balloon {
     -moz-border-radius-topright: 4px;
     -moz-border-radius-bottomright: 4px;
 }
-
-.pagination-centered {
-    text-align: center;
-}
-
-.pagination-right {
-    text-align: right;
-}
 /****pagination****/
 
 
@@ -530,7 +512,7 @@ a.category, a.tag{
     margin: 5px 0 5px 0;
 }
 #post-info a.category, #post-info a.tag{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
     margin: 5px 0 5px 0;
 }
