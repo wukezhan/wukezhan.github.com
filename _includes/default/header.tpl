@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+{% include default/meta.tpl %}
 <title>{% if page.title %}{{ page.title }}_{% endif %}{{ site.name }}</title>
 <link rel="stylesheet" type="text/css" href="/theme/{{site.theme}}/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/theme/{{site.theme}}/css/syntax.css" />
