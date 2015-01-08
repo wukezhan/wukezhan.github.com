@@ -3,7 +3,7 @@ layout: post
 title: 一些话
 category: 感想
 tags: [ 过眼录, 日省录  ]
-published: false
+published: true
 ---
 
 > ####倚天照海花无数，流水高山心自知！
