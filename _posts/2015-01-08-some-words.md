@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一些话
+title: 送给自己的一些诗句
 category: 感想
 tags: [ 过眼录, 日省录  ]
 published: true

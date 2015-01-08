@@ -41,10 +41,11 @@ class Git
         $current = '';
         for($i=0, $l=count($this->_results); $i<$l; $i++){
             $line = trim($this->_results[$i]);
+            echo $line,"@@\n";
             if(isset($signs[$line])){
                 $current = $signs[$line];
             }else{
-                if(preg_match('/^#([\t]+)([^\(]+)/', $line, $matches)){
+                if(preg_match('/^([\t]+)([^\(]+)/', $line, $matches)){
                     if (preg_match('/(modified|deleted|new file):[\t\s]+([^\n]+)/', $matches[2], $matches2)){
                         array_push($this->_changes[$matches2[1]], $matches2[2]);
                     }else{

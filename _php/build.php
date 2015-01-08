@@ -17,10 +17,10 @@ $git = new Git();
 $git->status();
 
 $changes = $git->getChanges();
-
 $posts = array();
 foreach ($changes as $files){
     foreach ($files as $file){
+        echo $file,"\n";
         if (preg_match('/^_posts\//', $file)){
             $posts[] = $file;
         }
