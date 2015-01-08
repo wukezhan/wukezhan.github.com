@@ -6,7 +6,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </script>
 </div>
 
-<script type="text/javascript">
+<!--script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', '{{ site.gaid }}']);
 _gaq.push(['_trackPageview']);
@@ -16,4 +16,4 @@ _gaq.push(['_trackPageview']);
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
-</script>
+</script-->
