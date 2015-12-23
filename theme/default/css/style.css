@@ -26,10 +26,7 @@ q:before,q:after {
 abbr,acronym { border:0;
 }
 body {
-	-moz-background-size:100% auto;
-	background-attachment:fixed;
-	background: #666 url(../image/bg.gif);
-	background-position:center center;
+	background: #222;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 h2, h3, h4, h5, h6 {
