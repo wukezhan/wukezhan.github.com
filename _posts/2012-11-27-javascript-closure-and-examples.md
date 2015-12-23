@@ -3,6 +3,7 @@ layout: post
 title: 闭包的一个通俗解释及简单示例  
 categories: [ code ]
 tags: [ javascript, closure ]
+published: false
 ---
 
 今日帮同事调试一个bug，遇到了一个闭包相关的问题，此问题的解决方案恰好简约生动的体现了闭包的一些特性，想起之前所看相关资料，多是从理论、数学等比较抽象的角度来阐释闭包，乃记录此例，以期能对闭包之特性形成一生动鲜明之印象。

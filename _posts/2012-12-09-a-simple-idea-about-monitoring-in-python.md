@@ -3,6 +3,7 @@ layout: post
 title: 【想法】用python实现一个简单的摄像头闯入检测程序
 categories: [ 想法, python ]
 tags: [ python, 监控 ]
+published: false
 ---
 
 最近百无聊赖，觉得住处实在太闷了，于是周末都跑到公司消磨时间。

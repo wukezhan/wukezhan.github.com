@@ -3,6 +3,7 @@ layout: post
 title: php pdo statements
 categories: [ code ]
 tags: [ php, mysql ]
+published: false
 ---
 
 ### 概念

@@ -4,6 +4,7 @@ title: mysql explain
 published: false
 categories: [ code ]
 tags: [ mysql, explain ]
+published: false
 ---
 
 {% highlight mysql %}
