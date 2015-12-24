@@ -58,7 +58,10 @@ h1 a:hover {
 	-moz-border-radius:5px 5px 5px 5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
-	-moz-box-shadow:0 1px 0 #FFFFFF;
+	-webkit-box-shadow: 0 0 3px #666;
+	-moz-box-shadow: 0 0 3px #666;
+	-o-box-shadow: 0 0 3px #666;
+	box-shadow: 0 0 3px #666;
 	background-color:#f4f4f4;
 	color:#111;
 	font-size:14px;
@@ -249,22 +252,22 @@ code, pre {
 	line-height:150%;
 }
 pre {
-	-moz-border-radius:5px 5px 5px 5px;
+	/*-moz-border-radius:5px 5px 5px 5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
-	/*-moz-box-shadow:0 -1px 0 #444444;*/
+	-moz-box-shadow:0 -1px 0 #444444;
     -webkit-box-shadow: 0 0 3px #555;
     -moz-box-shadow: 0 0 3px #555;
     -o-box-shadow: 0 0 3px #555;
-    box-shadow: 0 0 3px #555;
-	background-color:#222222;
+    box-shadow: 0 0 3px #555;*/
+	background-color:#333;
 	color:#FFFFFF;
 	font-size:13px;
-	margin:0 0 0 -40px;
+	margin:0 0 0 -20px;
 	padding:20px;
 	text-shadow:0 1px 0 #000000;
 	white-space:pre-wrap;
-	width:740px;
+	width:700px;
 	word-wrap:break-word;
 }
 div.notice {

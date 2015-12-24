@@ -8,7 +8,7 @@ tags: [ test ]
 ###hello world
 {% highlight php linenos %}
 
-    <?php 
-    echo "hello china!";
+<?php 
+echo "hello china!";
 
 {% endhighlight %}
