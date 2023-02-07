@@ -11,7 +11,7 @@ paginate: 10
 permalink: /:year-:month-:day/:title/
 
 markdown: rdiscount
-pygments: true
+highlighter: true
 
 gaid: UA-16656304-1
 disqusid: wukezhan
